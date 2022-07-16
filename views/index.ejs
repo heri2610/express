@@ -1,0 +1,10 @@
+<h1>ini dari file</h1>
+<h2>hallo nama saya <%= nama %></h2>
+<h3>Daftar mahasiswa</h3>
+<% if (mahasiswa.length<1) { %> Data mahasiswa masih kkosong <% } %> <% mahasiswa.forEach(mhs=>{ %>
+<ul>
+  <li>Nama:<%= mhs.nama %></li>
+  <li>Prodi:<%= mhs.prodi %></li>
+  <li>Email:<%= mhs.email %></li>
+</ul>
+<% }) %>
